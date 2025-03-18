@@ -1,7 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
+  <div class="w-screen h-screen p-4 relative">
+    <div class="absolute top-4 right-4">
+      <ColorMode />
+    </div>
     <slot />
   </div>
 </template>
