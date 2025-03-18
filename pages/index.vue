@@ -12,7 +12,8 @@ const handleCount = () => {
       <div class="w-80">
         <UCard>
           <div class="h-40">
-            <Icon class="text-blue-500" name="material-symbols:add-location-rounded" size="2rem" />
+            <!-- <Icon class="text-blue-500" name="material-symbols:5g-mobiledata-badge-rounded" size="2rem" /> -->
+            <!-- <Icon class="text-blue-500" name="material-symbols:add-location-rounded" size="2rem" /> -->
             数量: {{ count }}
           </div>
         </UCard>
