@@ -1,2 +1,6 @@
 @import "tailwindcss" theme(static);
 @import "@nuxt/ui";
+
+@utility flex-center {
+  @apply flex justify-center items-center
+}
