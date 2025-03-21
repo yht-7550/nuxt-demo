@@ -2,6 +2,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
+  devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
   vite: {
     plugins: [
       tailwindcss(),
@@ -12,13 +15,16 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@vueuse/nuxt',
     '@nuxt/icon',
+    '@pinia/nuxt',
+    'pinia-plugin-persistedstate/nuxt',
   ],
-  devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
   devServer: {
     port: 8848,
   },
   ui: {
+    theme: {
+      colors: ['primary', 'secondary', 'success', 'info', 'warning', 'error', 'neutral'],
+    },
     fonts: false,
     colorMode: true,
   },
@@ -33,6 +39,14 @@ export default defineNuxtConfig({
       collections: ['material-symbols'],
       remote: true,
     },
+  },
+  piniaPluginPersistedstate: {
+    key: `yht-%id-store`,
+    storage: 'cookies',
+    cookieOptions: {
+      sameSite: 'strict',
+    },
+    debug: true,
   },
   sourcemap: {
     client: 'hidden',

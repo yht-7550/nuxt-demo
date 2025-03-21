@@ -12,12 +12,14 @@ export default antfu({
       'ts/no-namespace': 'off',
       'ts/no-use-before-define': 'off',
       'ts/method-signature-style': 'off',
+      'ts/explicit-function-return-type': 'off',
     },
   },
   typescript: true,
   vue: {
     overrides: {
       'vue/v-slot-style': 'off',
+      'vue/html-self-closing': 'off',
     },
   },
   formatters: {

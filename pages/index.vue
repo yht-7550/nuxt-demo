@@ -19,7 +19,7 @@ const handleCount = () => {
         </UCard>
       </div>
       <UButton class="mt-4" @click="handleCount">
-        修改count
+        修改
       </UButton>
     </div>
   </div>
