@@ -49,8 +49,8 @@ export default defineNuxtConfig({
     debug: true,
   },
   sourcemap: {
-    client: 'hidden',
-    server: 'hidden',
+    client: false,
+    server: false,
   },
   compatibilityDate: '2025-03-12',
 })
