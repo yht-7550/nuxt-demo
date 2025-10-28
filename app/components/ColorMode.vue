@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useThemeStore } from '@/store'
+import { UIPrimaryColorList, UIRadiusList } from '@/utils'
 
 const themeStore = useThemeStore()
 const { changeTheme, changeRaduis } = themeStore
